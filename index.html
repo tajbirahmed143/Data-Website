@@ -1,35 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Sample Page</title>
+    <title>My LinkedIn-like Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #0073b1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .profile {
+            display: flex;
+            padding: 20px;
+        }
+        .profile-info {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .skills {
+            margin-top: 10px;
+        }
+        .experience {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Sample Page</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Your Name</h1>
+        <p>Headline | Location</p>
     </header>
 
-    <main>
-        <section>
+    <div class="profile">
+        <img class="profile-picture" src="profile-picture.jpg" alt="Profile Picture">
+        <div class="profile-info">
             <h2>About Me</h2>
-            <p>Hello! I'm a curious learner exploring HTML.</p>
-            <img src="https://www.example.com/sample-image.jpg" alt="Sample Image">
-        </section>
+            <p>Your summary goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-        <section>
-            <h2>Links</h2>
-            <p>Check out this <a href="https://www.example.com">link</a>.</p>
-        </section>
-    </main>
+            <h2>Skills</h2>
+            <ul class="skills">
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+                <li>Skill 3</li>
+            </ul>
 
-    <footer>
-        <p>&copy; 2023 My Sample Page</p>
-    </footer>
+            <h2>Experience</h2>
+            <div class="experience">
+                <h3>Job Title</h3>
+                <p>Company Name | Employment Dates</p>
+                <p>Description of responsibilities and achievements.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
